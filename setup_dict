@@ -1,0 +1,8 @@
+#!/bin/bash
+
+case "$(uname -s)" in
+  Darwin)
+    curl -o third_party/data/words.txt https://github.com/dwyl/english-words/raw/master/words_alpha.txt;;
+  Linux)
+    wget -O third_party/data/words.txt https://github.com/dwyl/english-words/raw/master/words_alpha.txt;;
+esac

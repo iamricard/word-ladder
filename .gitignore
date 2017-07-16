@@ -23,3 +23,5 @@ hs_err_pid*
 
 bazel-*
 !bazel-buildifier
+
+third_party/data/*.txt
